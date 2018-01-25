@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
 
-    <script src="script.js"></script>
-    <script src="jquery.1.8.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+        <script src="script.js"></script>
 
     <title>
       JavaScript - Data Structures
@@ -21,16 +22,80 @@
       <div class="title">
         <h1>
           Arrays
+          <!-- Make list of names in a text box and ability to add name on with input-->
         </h1>
       </div>
       <div class="tutorial">
+        <div class="textbox">
+          <ul class="namelist">
+            <li>
+              Grace
+            </li>
+            <li>
+              Maria
+            </li>
+            <li>
+              John
+            </li>
+          </ul>
+        </div>
+
+        <div class="inputbox">
+          <input name="person-name" class="inputuser" type="text" />
+          <input name="Add" type="submit" value="Add" class="inputbutton" />
+        </div>
       </div>
     </div>
+
+
+    <div class="content">
+      <div class="title">
+        <h1>
+          SQL
+          <!-- Ability to create your own name and password added to a database then authorize it in a text box -->
+        </h1>
+      </div>
+      <div class="tutorial">
+        <div class="textbox">
+          <table style="width:100%">
+           <tr>
+             <th>Name</th>
+             <th>Password</th>
+             <th>Email</th>
+           </tr>
+           <tr>
+             <td>Grace</td>
+             <td>jackrussell87</td>
+             <td>grace.smith@gmail.com</td>
+           </tr>
+           <tr>
+             <td>Tony</td>
+             <td>ironmanrocks</td>
+             <td>info@starkindustries.com</td>
+           </tr>
+          </table>
+          <input name="name" type="text" placeholder="Enter your name"/>
+          <input name="password" type="password" placeholder="Enter password"/>
+          <input name="email" type="email" placeholder="Enter email"/>
+          <input name="Create" type="submit" value="Create Account" class="sqlbutton" />
+          <!-- Use PHP to query a current database and popular the tables inner HTML. then on submit have another PHP function
+          add to the database then repopulate.
+
+          Password validator showing weak medium strong
+
+          One final PHP query to check for existence of user entry for login
+        -->
+        </div>
+      </div>
+    </div>
+
+
 
     <div class="content">
       <div class="title">
         <h1>
           Stack
+          <!-- Show a stack of DVDs  in text box with ability to add and remove last in first out -->
         </h1>
       </div>
       <div class="tutorial">
@@ -58,6 +123,7 @@
 
     <div class="content">
       <div class="title">
+        <!-- Explore button that iterates through map key value environment animal with string concactation-->
         <h1>
           Map
         </h1>
@@ -87,15 +153,7 @@
       </div>
     </div>
 
-    <div class="content">
-      <div class="title">
-        <h1>
-          SQL
-        </h1>
-      </div>
-      <div class="tutorial">
-      </div>
-    </div>
+
 
 
   </body>
